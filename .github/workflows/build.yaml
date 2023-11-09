@@ -14,3 +14,8 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '17'
       - run: java -version
+      - run: |
+            pwd
+            ls -l
+            ./mvnw -B compile package
+        working-directory: ./backend
